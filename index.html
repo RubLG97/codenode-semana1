@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maximal Gym - Bienvenido</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <h1>Maximal Gym</h1>
+    </header>
+
+    <main>
+        <section class="card" aria-labelledby="formulario-maximal">
+            <h2 id="formulario-maximal">Bienvenido a Maximal</h2>
+            <p>Déjanos tu nombre y te daremos un mensaje de bienvenida personalizado.</p>
+
+            <form action="index.php" method="post" class="form">
+                <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-actions">
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; <?php echo date('Y'); ?> - Maximal Gym</p>
+    </footer>
+</body>
+</html>
